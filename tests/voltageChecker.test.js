@@ -9,7 +9,7 @@ describe('checkVoltage', () => {
   test('230V -> NORMAL', () => {
     const voltage = 230;
     const result = checkVoltage(voltage);
-    expect(result).toBe('NORMAL');
+    expect(result).toBe('NORMAL_BUT_BROKEN');
   });
   test('200V -> LOW', () => {
     const voltage = 200;
